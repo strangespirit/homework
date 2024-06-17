@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ 6</title>
+    <style>
+        table {
+            width: 500px;
+            height: 300px;
+        }
+        table, th, tr, td, caption {
+            border: 1px solid #4d4d4d;
+            text-align: center;
+        }
+        th {
+            color: #d19797;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Таблица</caption>
+        <thead>
+            <tr>
+                <th>Шапка</th>
+                <th>Шапка</th>
+                <th>Шапка</th>
+                <th>Шапка</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Тело x3</td>
+                <td>Тело</td>
+                <td>Тело</td>
+                <td>Тело</td>
+            </tr>
+            <tr>
+                <td>Тело</td>
+                <td colspan="2">Тело x2</td>
+            </tr>
+            <tr>
+                <td>Тело</td>
+                <td>Тело</td>
+                <td>Тело</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Футер</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
