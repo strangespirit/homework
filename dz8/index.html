@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ 8</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>ФИО</legend>
+            <label>
+                Введите имя
+                <input type="text" required>
+            </label><br>
+            <label for="fam">Введите фамилию</label>
+            <input type="text" id="fam" required><br>
+            <label for="otche">Введите отчество</label>
+            <input type="text" id="otche" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Прочее</legend>
+            <label>
+                Введите дату рождения
+                <input type="date"><br>
+            </label>
+            <label>
+                Введите номер телефона
+                <input type="tel" maxlength="11" placeholder="89999999999"><br>
+            </label>
+            <label>
+                Введите почту
+                <input type="email" placeholder="example@something.ru">
+            </label>
+        </fieldset>
+        <textarea cols="30" rows="5" placeholder="комментарий"></textarea><br>
+        <select>
+            <option value="0" disabled selected>-- Выберите --</option>
+            <option value="1">-- Отчислиться --</option>
+            <option value="2">-- Повеситься --</option>
+            <option value="3">-- Спиться --</option>
+        </select><br>
+        <fieldset>
+            <legend>Выберите</legend>
+            <label>
+                <input type="checkbox">Интерстеллар<br>
+            </label>
+            <label>
+                <input type="checkbox">Довод<br>
+            </label>
+            <label>
+                <input type="checkbox">Начало<br>
+            </label>
+            <label>
+                <input type="checkbox">Бэтмен<br><br>
+            </label>
+            <label>
+                <input type="radio" name="r1">МИРЭА<br>
+            </label>
+            <label>
+                <input type="radio" name="r1">РАНХИхиГС
+            </label>
+        </fieldset>
+        <input type="reset">
+        <input type="submit"><br>
+        <input type="search" placeholder="поиск">
+    </form>
+</body>
+</html>
