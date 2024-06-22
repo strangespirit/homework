@@ -14,8 +14,7 @@
         }
         .rectangle {
             background-color: #d5c5c5;
-            height: 100px;
-            min-width: 40vw;
+            height: 100px;  /* ширину указывать не надо тк она неявно задается с помощью left и right */
             border-radius: 15px;
             /* ================ */
             position: fixed;
@@ -31,9 +30,9 @@
             max-width: 100px;
             border-radius: 50%;
             /* ================= */
-            position: fixed;
-            right: 600px;
-            bottom: 150px;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
         }
     </style>
 </head>
