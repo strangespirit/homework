@@ -1,0 +1,115 @@
+.footer {
+    background: #AB8261;
+    color: var(--general-bg);
+    padding: 34px 66px;
+}
+
+.footer__inner {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: .9fr .9fr 1.1fr auto;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: block;
+    max-width: 240px;
+    margin-bottom: 4px;
+}
+
+.footer__logo img {
+    width: 100%;
+}
+
+.footer__logo-text {
+    margin-bottom: 23px;
+}
+
+.footer__col-list {
+    margin-top: 26px;
+}
+
+.footer__col-item {
+    margin-bottom: 10px;
+}
+
+.footer__col-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__col-link {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__col-link::before {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: -15px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    z-index: -1;
+    background: var(--accent-color);
+    /* используем не display: none; тк display не подвержен свойству transition => плавного перехода не будет */
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.footer__col-link:HOVER::before {
+    opacity: 1;
+}
+
+.footer__contact-list {
+    margin-top: 26px;
+}
+
+.footer__contact-item {
+    margin-bottom: 10px;
+}
+
+.footer__contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__col-tel {
+    margin-top: 26px;
+}
+
+.footer__col-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 47px;
+    transition: var(--transition);
+}
+
+.footer__col-number:HOVER {
+    color: var(--accent-color);
+}
+
+.footer__col-copy {
+    color: #DEC5B1;
+}
+
+.socials {
+    line-height: 0;
+}
+
+.socials__list {
+    display: flex;
+    gap: 15px;
+}
+
+.socials__link path {
+    transition: var(--transition);
+}
+
+/* перекрашиваем svg изображение */
+.socials__link:HOVER path {
+    fill: var(--accent-color);
+}
